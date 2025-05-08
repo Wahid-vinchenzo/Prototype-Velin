@@ -1,0 +1,40 @@
+/* custom-styles.css */
+
+/* Custom Swiper pagination styles */
+.hero-slider .swiper-pagination-bullet {
+    width: 8px;
+    height: 8px;
+    background-color: #CBD5E1; /* Tailwind gray-300 */
+    opacity: 1;
+    margin: 0 5px !important; /* Add some horizontal margin */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-slider .swiper-pagination-bullet-active {
+    background-color: #1F2937; /* Tailwind gray-800 or your brand's dark color */
+    transform: scale(1.1); /* Slightly larger active dot */
+}
+
+/* Optional: Custom Swiper navigation arrow styles */
+/* If you decide to use arrows, you can style them here */
+.hero-slider .swiper-button-next,
+.hero-slider .swiper-button-prev {
+    /* display: none; */ /* Uncomment if you want to hide arrows globally via CSS */
+    color: white;
+    background-color: rgba(0,0,0,0.2);
+    padding: 6px; /* Tailwind p-1.5 equivalent */
+    border-radius: 9999px; /* Tailwind rounded-full */
+    width: 36px; /* Tailwind w-9 */
+    height: 36px; /* Tailwind h-9 */
+    top: 50%;
+    transform: translateY(-50%);
+    /* Consider adding z-index if they get hidden behind slides */
+    /* z-index: 10; */
+}
+
+.hero-slider .swiper-button-next::after,
+.hero-slider .swiper-button-prev::after {
+    font-size: 16px; /* Tailwind text-base equivalent for icon size */
+}
+
+/* You can add other custom global styles here if needed */
